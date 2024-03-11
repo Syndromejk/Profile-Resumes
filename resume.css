@@ -1,0 +1,592 @@
+body{
+  background-color: #F5F5F5;
+}
+nav {
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* overflow: hidden; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+ 
+ 
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ 
+ 
+li {
+  display: inline-block;
+  position: relative;
+ 
+}
+ 
+ 
+.dropdown ul li a {
+  display: block;
+}
+ 
+ 
+ul li ul.dropdown {
+  position: absolute;
+  z-index: 999;
+  display: none;
+  top: calc(100% + 2px);
+  padding: 10px;
+  left: 0;
+}
+ 
+ 
+.dropdown{
+  background-color: white;
+  border-right: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+ 
+ 
+ul li:hover ul.dropdown {
+  display: block;
+}
+ 
+ 
+ul li ul.dropdown li {
+  display: block;
+}
+ 
+ 
+.dropdown-btn {
+  font-family: 'Montserrat', sans-serif ;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(31, 53, 61, 1);
+}
+ 
+ 
+nav a,
+.dropdown-btn {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Montserrat sans-serif;
+
+}
+ 
+ 
+nav a img {
+  vertical-align: middle;
+  margin-right: 8px;
+}
+ 
+ 
+nav a:hover,
+.dropdown-btn:hover {
+  background-color: #ddd;
+  color: black;
+}
+ 
+ 
+.button-container {
+  text-align: center;
+}
+ 
+.profile-btn {
+  width: 124px;
+  height: 40px;
+  padding: 7px 15px;
+  border-radius: 40px;
+  border: 2px solid #548BAB;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: white;
+  color: #548BAB;
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+ 
+.profile-btn:hover {
+  background-color: #548BAB;
+  color: white; /* Change the background color on hover */
+}
+ 
+.profile-btn img {
+  width: 30px; /* Adjust the width as needed */
+  height: 30px; /* Adjust the height as needed */
+}
+
+.colored-border-container {
+  background-color: #548BAB;
+  width: 100%;
+  height: 165px;
+  margin: auto; /* Adjust the margin as needed */
+  border: 10px solid #548BAB; /* Set the border color to match the background */
+  box-sizing: border-box; /* Include the border size in the total width and height */
+}
+ 
+.profile {
+  font-family: Montserrat sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 65px;
+  letter-spacing: 0px;
+  text-align: left;
+  background: #548BAB;
+  color: #FFFFFF;
+  padding: 20px;
+  margin-left:140px;
+  margin-top: 20px;
+}
+
+.rectanglee-containerr {
+  width: 220px;
+  height: 448px;
+  top: 316px;
+  left: 250px;
+  border: 2px solid white;
+  background: rgb(255, 255, 255);
+  border-radius: 8px;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-left: 17vh;
+  margin-top: 5vh;
+}
+ 
+ 
+.itemmm {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 10px;
+  box-sizing: border-box;
+}
+ 
+.linkkk {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+ 
+.icon111 {
+  width: 15.5px;
+  height: 15.5px;
+  margin-right: 10px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  transition: transform 0.3s ease;
+}
+ 
+.h555 {
+  margin: 0;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  transition: color 0.3s ease;
+}
+ 
+.linkkk:hover .icon111 {
+  transform: scale(1.2);
+  color:#548BAB
+}
+ 
+.linkkk:hover .h5 {
+  color: #548BAB;
+}
+
+.linkkk:hover h5 {
+  color: #548BAB; /* Change the color to your preferred hover color */
+}
+/* **************************************************************** */
+
+.Documents {
+  position: absolute;
+  width: 175px;
+  height: 36px;
+  left: 511px;
+  top: 316px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  /* identical to box height, or 36px */
+  color: #000000;
+  font-family: Montserrat sans-serif;
+}
+
+
+/* **************************************************************** */
+
+
+.doc-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next row */
+  justify-content: flex-start; /* Align items to the start of the container */
+ /* Adjust the gap as needed */
+  position: absolute;
+  width: 618px;
+  left: 511px;
+  top: 372px;
+}
+
+.tab {
+  position: relative;
+  width: 123px;
+  height: 21px;
+  font-family: Montserrat sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  color: #AEAEAA;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  cursor: pointer;
+  margin-right: 8px; /* Adjust the margin as needed */
+}
+
+.tab:hover::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #548BAB;
+  bottom: 0;
+  left: 0;
+}
+
+/* Skills */
+.tab:hover::after {
+  background-color: #548BAB;
+}
+
+/* Work experience */
+.tab:hover::after {
+  background-color: #548BAB;
+}
+
+/* Education */
+.tab:hover::after {
+  background-color: #548BAB;
+}
+
+/* Licenses & certifications */
+.tab:hover::after {
+  background-color: #548BAB;
+}
+
+
+.tab{
+  width: 8.5vh;    
+}
+
+
+/* **************************************************************** */
+
+ /* Button */
+ .docs-button {
+  position: absolute;
+  width: 175px; /* Adjust this width as needed */
+  height: 40px;
+  left: 510px;
+  top: 430px;
+  border-radius: 50px;
+  overflow: hidden; /* Ensure the border-radius clips the background properly */
+  display: flex;
+  align-items: center;
+}
+
+/* Button Background */
+.docbutton-background {
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%; /* Set to 100% to match the width of .addexp-button */
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  border: 2px solid #548BAB;
+  border-radius: 50px;
+}
+
+
+/* Plus Sign */
+.plus-sign {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px; /* Adjust spacing as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: #548BAB;
+}
+
+/* Button Title */
+.docbutton-title {
+  width: 100%;
+  height: 24px;
+  font-family: Montserrat sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #548BAB;
+}
+
+/* **************************************************************** */
+
+/* Reset some default styles for consistency */
+body, h1, h2, p, div {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Your provided styles */
+
+/* Frame 112 */
+.frame-112 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 30px;
+  position: absolute;
+  width: 681px;
+  height: 81px;
+  left: 510px;
+  top: 500px;
+}
+
+/* Frame 111 */
+.frame-111 {
+  width: 681px;
+  height: 51px;
+}
+
+/* Frame 110 */
+.frame-110 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 7px;
+  position: absolute;
+  width: 299px;
+  height: 55px;
+  left: 1px;
+  top: 0px;
+}
+
+/* Filename */
+.filename {
+  width: 299px;
+  height: 27px;
+  font-family: Montserrat sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  color: #000000;
+}
+
+/* Uploaded date */
+.uploaded-date {
+  width: 117px;
+  height: 21px;
+  font-family: Montserrat sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  color: #595959;
+}
+
+/* Frame 113 */
+.frame-113 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0;
+  gap: 10px;
+  position: absolute;
+  width: 271px;
+  height: 40px;
+  right: 0;
+  top: 5px;
+}
+
+/* Button styles */
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #548BAB;
+  border-radius: 55px;
+  font-family: Montserrat sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #548BAB;
+  width: 139px;
+  height: 29px;
+}
+
+/* Icons */
+.icons {
+  width: 16px;
+  height: 16px;
+}
+
+/* Line separator */
+.line {
+  width: 680px;
+  height: 0px;
+  border: 1px solid #E5E6E2;
+}
+
+/* **************************************************************** */
+.footer {
+  background-color: #FFFFFF;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 135vh;
+}
+
+
+.footerLogo {
+  width: 219.23px;
+  height: 81.49px;
+  margin-left: 50px;
+  margin-top: 10px; 
+}
+
+
+.glee{
+  margin-left: 50px;
+  width: 176px;
+  height: 48px;
+  top: 275px;
+  left: 112px;
+  color:#548BAB;
+  font-family: Montserrat sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0px;
+  text-align: baseline;
+}
+
+
+.footer-column {
+  flex: 1;
+  margin: 0 10px;
+}
+
+
+.footer-column a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+
+.footer-column a:hover {
+  color: blue;
+}
+
+
+.footer-line {
+  border-bottom: 3px solid #F5F5F5;
+}
+
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  margin-right: 4%;
+  margin-top: 10px;
+  justify-content: flex-end; 
+}
+
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+
+.centered-text{
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  margin-top: 20px;
+  margin-left: 4%;
+}
+
+
+.centered-text a {
+  color: black; 
+  text-decoration: none; 
+  margin: 1%;
+}
+
+
+.centered-text a:hover {
+  color: gray; 
+}
+
+
+.bott {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.bott1 {
+  margin-right: auto;
+  width: auto;
+  height: 50px;
+  margin-left: 50px;
+}
+
+
+.bott2 {
+  margin-left: auto;
+  margin-right: 50px ;
+}
+
+
+.mid {
+  margin: 0 auto;
+}
+
+
+.bott img {
+  margin-top: 20px;
+}
+
+
+
+/* **************************************** */
